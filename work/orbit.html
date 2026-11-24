@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orbit — Case Study · Kasara Aditya</title>
+  <meta name="description" content="Case study for Orbit, a responsive university placement web experience designed and built by Kasara Aditya.">
+  <link rel="canonical" href="https://adityakasara.github.io/kasara-aditya-portfolio/work/orbit.html">
+  <meta property="og:title" content="Orbit — Case Study · Kasara Aditya">
+  <meta property="og:description" content="A responsive web experience for campus placement discovery, applications, interviews, and recruitment tracking.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://adityakasara.github.io/kasara-aditya-portfolio/work/orbit.html">
+  <meta property="og:image" content="../assets/orbit/dashboard.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&family=Plus+Jakarta+Sans:wght@400;500&family=Space+Grotesk:wght@500;600&family=Syne:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/case-study.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+  <div class="cs-progress" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="wordmark" href="../index.html">Kasara Aditya</a>
+      <nav class="nav-desktop" aria-label="Primary">
+        <a href="../index.html#work" aria-current="page">Work</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact">Contact</a>
+        <a class="btn-resume" href="../resume/Kasara_Aditya_Resume.pdf">Resume</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-drawer" id="mobile-menu" hidden>
+    <div class="nav-drawer__top">
+      <a class="wordmark" href="../index.html">Kasara Aditya</a>
+      <button class="nav-drawer__close btn btn--ghost" type="button">Close</button>
+    </div>
+    <nav aria-label="Mobile">
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#contact">Contact</a>
+      <a href="../resume/Kasara_Aditya_Resume.pdf">Resume</a>
+    </nav>
+  </div>
+
+  <main id="main">
+    <section class="cs-hero container" id="hero">
+      <a class="back-link" href="../index.html#work">← Work</a>
+      <div class="cs-hero__grid">
+        <div>
+          <p class="cs-kicker">Project 01</p>
+          <h1 class="display" style="font-size: clamp(3rem, 8vw, 6rem);">Orbit</h1>
+          <p>University Placement Web Experience Suite</p>
+          <p class="lede">A responsive web experience designed to help students discover placement opportunities, track applications, manage interviews, and stay on top of their recruitment journey.</p>
+          <dl class="cs-meta">
+            <div>
+              <dt>Role</dt>
+              <dd>Product Designer · Front-End Developer</dd>
+            </div>
+            <div>
+              <dt>Tools</dt>
+              <dd>Figma · HTML · CSS · JavaScript</dd>
+            </div>
+            <div>
+              <dt>Platform</dt>
+              <dd>Responsive Web</dd>
+            </div>
+          </dl>
+          <div class="btn-row">
+            <a class="btn" href="https://adityakasara.github.io/Orbit-Placement-Suite/" rel="noopener noreferrer">View Live Product <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <figure class="cs-hero__media media-reveal">
+          <img src="../assets/orbit/dashboard.png" alt="Orbit dashboard overview with sidebar navigation, search, metrics, and featured placement openings" width="1440" height="900">
+        </figure>
+      </div>
+    </section>
+
+    <div class="container cs-sticky">
+      <nav class="cs-nav" aria-label="Case study">
+        <a href="#overview">Overview</a>
+        <a href="#problem">Problem</a>
+        <a href="#research">Research</a>
+        <a href="#insights">Insights</a>
+        <a href="#persona">Persona</a>
+        <a href="#journey">Journey</a>
+        <a href="#ia">Architecture</a>
+        <a href="#wireframes">Wireframes</a>
+        <a href="#system">System</a>
+        <a href="#ui">Interface</a>
+        <a href="#interaction">Interaction</a>
+        <a href="#testing">Testing</a>
+        <a href="#iterations">Iterations</a>
+        <a href="#implementation">Build</a>
+        <a href="#live">Live</a>
+      </nav>
+
+      <div>
+        <section class="cs-block" id="overview">
+          <p class="eyebrow">Overview</p>
+          <h2>One place for a fragmented placement season.</h2>
+          <p>Orbit is a campus placement suite with five primary surfaces: an overview dashboard, job discovery, application tracking, an interview calendar, and a candidate profile. It is implemented as a static, responsive web experience and published on GitHub Pages.</p>
+        </section>
+
+        <section class="cs-block" id="problem">
+          <p class="eyebrow">The Problem</p>
+          <h2>Placement work is spread across too many tools.</h2>
+          <p>Students often manage placement information across job listings, announcements, application portals, and interview schedules. This can make it difficult to discover relevant opportunities, track application progress, and stay aware of deadlines.</p>
+          <div class="problem-grid">
+            <article class="card">
+              <h3>Job Discovery</h3>
+              <p class="muted">Roles live in emails, PDFs, and boards — hard to scan by type, location, or fit.</p>
+            </article>
+            <article class="card">
+              <h3>Application Tracking</h3>
+              <p class="muted">Submitted applications are easy to lose without a shared status model.</p>
+            </article>
+            <article class="card">
+              <h3>Deadline Awareness</h3>
+              <p class="muted">Closing dates sit in different calendars, so urgency is easy to miss.</p>
+            </article>
+            <article class="card">
+              <h3>Interview Management</h3>
+              <p class="muted">Tests, rounds, and reminders are rarely connected to the role they belong to.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="cs-block" id="research">
+          <p class="eyebrow">Research</p>
+          <h2>What students actually struggle with.</h2>
+          <p>This section is structured for real research. Findings are not invented.</p>
+          <div class="stat-grid">
+            <article class="card">
+              <p class="caption">Students interviewed</p>
+              <p class="placeholder-note">[ADD REAL NUMBER]</p>
+            </article>
+            <article class="card">
+              <p class="caption">Recurring pain points</p>
+              <p class="placeholder-note">[ADD REAL NUMBER]</p>
+            </article>
+            <article class="card">
+              <p class="caption">Research method</p>
+              <p>Short interviews / survey / observation</p>
+              <p class="placeholder-note">[ADD REAL USER RESEARCH]</p>
+            </article>
+          </div>
+          <p class="muted" style="margin-top:1.5rem;">User quotes will be added here once interviews are complete.</p>
+          <p class="placeholder-note">[ADD REAL USER QUOTE]</p>
+        </section>
+
+        <section class="cs-block" id="insights">
+          <p class="eyebrow">Key Insights</p>
+          <h2>Patterns to design against — after research lands.</h2>
+          <div class="insight-grid">
+            <article class="card">
+              <p class="step__num">01</p>
+              <p class="placeholder-note">[REAL INSIGHT]</p>
+            </article>
+            <article class="card">
+              <p class="step__num">02</p>
+              <p class="placeholder-note">[REAL INSIGHT]</p>
+            </article>
+            <article class="card">
+              <p class="step__num">03</p>
+              <p class="placeholder-note">[REAL INSIGHT]</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="cs-block" id="persona">
+          <p class="eyebrow">Persona</p>
+          <h2>Primary student (placeholder until research is complete).</h2>
+          <div class="persona">
+            <div class="card">
+              <p class="caption">Name</p>
+              <p class="placeholder-note">[ADD REAL DATA]</p>
+              <p class="caption">Program</p>
+              <p class="placeholder-note">[ADD REAL DATA]</p>
+              <p class="caption">Year</p>
+              <p class="placeholder-note">[ADD REAL DATA]</p>
+            </div>
+            <div>
+              <article class="card" style="margin-bottom:1rem;">
+                <h3>Goals</h3>
+                <p class="placeholder-note">[ADD REAL DATA]</p>
+              </article>
+              <article class="card" style="margin-bottom:1rem;">
+                <h3>Frustrations</h3>
+                <p class="placeholder-note">[ADD REAL DATA]</p>
+              </article>
+              <article class="card" style="margin-bottom:1rem;">
+                <h3>Needs</h3>
+                <p class="placeholder-note">[ADD REAL DATA]</p>
+              </article>
+              <article class="card">
+                <h3>Behaviors</h3>
+                <p class="placeholder-note">[ADD REAL DATA]</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="cs-block" id="journey">
+          <p class="eyebrow">User Journey</p>
+          <h2>From first drive to offer.</h2>
+          <div class="journey">
+            <article class="journey-step">
+              <p class="journey-step__stage">Discover</p>
+              <p><strong>User goal:</strong> Know what is open this week.</p>
+              <p class="muted"><strong>Pain point:</strong> Opportunities arrive through scattered announcements.</p>
+              <p><strong>Orbit response:</strong> Overview dashboard with featured openings and a live opportunities count.</p>
+            </article>
+            <article class="journey-step">
+              <p class="journey-step__stage">Search</p>
+              <p><strong>User goal:</strong> Find a relevant role quickly.</p>
+              <p class="muted"><strong>Pain point:</strong> Lists are long and weakly filtered.</p>
+              <p><strong>Orbit response:</strong> Search, filters by contract type and domain, and a command palette for keyboard access.</p>
+            </article>
+            <article class="journey-step">
+              <p class="journey-step__stage">Evaluate</p>
+              <p><strong>User goal:</strong> Decide if a role is worth applying to.</p>
+              <p class="muted"><strong>Pain point:</strong> CTC, location, and close date are hard to compare.</p>
+              <p><strong>Orbit response:</strong> Job cards surface company, location, CTC, match score, and closing urgency together.</p>
+            </article>
+            <article class="journey-step">
+              <p class="journey-step__stage">Apply</p>
+              <p><strong>User goal:</strong> Submit interest without losing context.</p>
+              <p class="muted"><strong>Pain point:</strong> Application lives in a separate form with no trail.</p>
+              <p><strong>Orbit response:</strong> Apply flow from the role card, with applications collected in one tracker.</p>
+            </article>
+            <article class="journey-step">
+              <p class="journey-step__stage">Track</p>
+              <p><strong>User goal:</strong> See where each application stands.</p>
+              <p class="muted"><strong>Pain point:</strong> Status is verbal or buried in email.</p>
+              <p><strong>Orbit response:</strong> Application pipeline with review, interview, and offer stages.</p>
+            </article>
+            <article class="journey-step">
+              <p class="journey-step__stage">Interview</p>
+              <p><strong>User goal:</strong> Show up prepared and on time.</p>
+              <p class="muted"><strong>Pain point:</strong> Test slots sit outside the job record.</p>
+              <p><strong>Orbit response:</strong> Calendar, reminders, and a placement schedule view.</p>
+            </article>
+            <article class="journey-step">
+              <p class="journey-step__stage">Offer</p>
+              <p><strong>User goal:</strong> Keep profile and paperwork ready.</p>
+              <p class="muted"><strong>Pain point:</strong> Resume and projects are incomplete when recruiters look.</p>
+              <p><strong>Orbit response:</strong> Profile completeness checklist and radial readiness score.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="cs-block" id="ia">
+          <p class="eyebrow">Information Architecture</p>
+          <h2>A simple map for a dense season.</h2>
+          <div class="ia-tree" aria-label="Orbit information architecture">
+            <div class="root">Orbit</div>
+            <div class="ia-branch">Dashboard</div>
+            <div class="ia-branch">Jobs
+              <div class="ia-branch">All Jobs</div>
+              <div class="ia-branch">Recommended</div>
+              <div class="ia-branch">Saved</div>
+            </div>
+            <div class="ia-branch">Applications</div>
+            <div class="ia-branch">Interviews</div>
+            <div class="ia-branch">Notifications</div>
+            <div class="ia-branch">Profile</div>
+          </div>
+        </section>
+
+        <section class="cs-block" id="wireframes">
+          <p class="eyebrow">Wireframes</p>
+          <h2>Problem → structure → interface.</h2>
+          <p class="flow"><span>Problem</span> → Wireframe → Iteration → Final UI</p>
+          <div class="wire-grid">
+            <figure>
+              <div class="wire-card">
+                <p class="placeholder-note">[ADD WIREFRAME IMAGE]</p>
+                <p class="caption">Low fidelity</p>
+              </div>
+              <figcaption class="ui-caption">Early layout of dashboard modules and navigation.</figcaption>
+            </figure>
+            <figure>
+              <div class="wire-card">
+                <p class="placeholder-note">[ADD WIREFRAME IMAGE]</p>
+                <p class="caption">Mid fidelity</p>
+              </div>
+              <figcaption class="ui-caption">Job listing density, filters, and application states.</figcaption>
+            </figure>
+            <figure>
+              <div class="wire-card">
+                <p class="placeholder-note">[ADD WIREFRAME IMAGE]</p>
+                <p class="caption">Final direction</p>
+              </div>
+              <figcaption class="ui-caption">Basalt canvas language used in the live product.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="cs-block" id="system">
+          <p class="eyebrow">Design System</p>
+          <h2>Basalt &amp; UICanvas — built for the product, not this portfolio.</h2>
+          <p>Orbit uses a dark campus-suite language: deep surfaces, specular borders, and a small set of status colors. The portfolio stays warm and editorial on purpose, so the product can keep its own identity.</p>
+
+          <h3 style="margin-top:2rem;">Color tokens</h3>
+          <div class="swatch-row" style="margin-top:1rem;">
+            <div class="swatch swatch--primary">Primary · #06070a</div>
+            <div class="swatch swatch--secondary">Secondary · #151924</div>
+            <div class="swatch swatch--accent">Accent · #6366f1</div>
+            <div class="swatch swatch--surface">Surface · #0f121a</div>
+            <div class="swatch swatch--border">Border · low-contrast line</div>
+            <div class="swatch swatch--text">Text · #f1f5f9</div>
+          </div>
+
+          <h3 style="margin-top:2rem;">Typography</h3>
+          <div class="type-sample">
+            <strong>Syne — display</strong>
+            <p class="type-syne">Placement Drives</p>
+          </div>
+          <div class="type-sample">
+            <strong>Plus Jakarta Sans — UI</strong>
+            <p class="type-jakarta">Track applications, filters, and profile details in a readable UI size.</p>
+          </div>
+          <div class="type-sample">
+            <strong>JetBrains Mono — metadata</strong>
+            <p class="type-mono">CTC · MATCH · ⌘K</p>
+          </div>
+
+          <h3 style="margin-top:2rem;">Components</h3>
+          <div class="comp-chips" style="margin-top:1rem;">
+            <span>Navigation</span>
+            <span>Buttons</span>
+            <span>Job Cards</span>
+            <span>Filters</span>
+            <span>Status Badges</span>
+            <span>Modals</span>
+            <span>Progress Trackers</span>
+            <span>Forms</span>
+            <span>Command Palette</span>
+          </div>
+
+          <h3 style="margin-top:2rem;">Tokens</h3>
+          <p class="muted">Spacing, radius, type scale, elevation, and motion are defined as CSS custom properties so the same language can hold dashboard, jobs, calendar, and profile without restyling each screen from scratch.</p>
+        </section>
+
+        <section class="cs-block" id="ui">
+          <p class="eyebrow">High-Fidelity UI</p>
+          <h2>The product surfaces, as built.</h2>
+          <div class="ui-showcase">
+            <figure>
+              <div class="ui-frame">
+                <img src="../assets/orbit/dashboard.png" alt="Orbit dashboard with welcome state, metric cards, and featured openings" width="1440" height="900" loading="lazy">
+              </div>
+              <figcaption class="ui-caption">Dashboard — applications, schedule, saved roles, and profile completeness are visible in the first viewport so students can see recruitment status without hunting through navigation.</figcaption>
+            </figure>
+            <figure>
+              <div class="ui-frame">
+                <img src="../assets/orbit/dashboard.png" alt="Job discovery area within Orbit showing featured placement openings" width="1440" height="900" loading="lazy">
+              </div>
+              <figcaption class="ui-caption">Job discovery — role, company, location, compensation, and match sit on one card so comparison does not require opening every listing.</figcaption>
+            </figure>
+            <p class="placeholder-note">[ADD JOB DETAILS SCREENSHOT]</p>
+            <p class="placeholder-note">[ADD APPLICATION TRACKING SCREENSHOT]</p>
+            <p class="placeholder-note">[ADD INTERVIEW CALENDAR SCREENSHOT]</p>
+            <p class="placeholder-note">[ADD PROFILE SCREENSHOT]</p>
+            <figure class="ui-showcase--split" style="display:grid;gap:1rem;">
+              <div class="ui-frame ui-frame--mobile">
+                <img src="../assets/orbit/mobile.png" alt="Orbit mobile overview with stacked metric cards and compact header" width="390" height="844" loading="lazy">
+              </div>
+              <figcaption class="ui-caption">Mobile experience — the same overview stacks: search stays reachable, metrics become a vertical scan, and navigation moves into a drawer.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="cs-block" id="interaction">
+          <p class="eyebrow">Interaction Design</p>
+          <h2>Motion that explains the product, not decoration.</h2>
+          <div class="interaction-list">
+            <article class="card">
+              <h3>3D card tilt</h3>
+              <p><strong>Purpose:</strong> Give job cards a tactile hover so density still feels physical on desktop.</p>
+              <p class="muted"><strong>Implementation:</strong> Pointer position maps to a small rotateX/rotateY transform on the card.</p>
+            </article>
+            <article class="card">
+              <h3>Command palette</h3>
+              <p><strong>Purpose:</strong> Provide fast keyboard-driven navigation for frequent users.</p>
+              <p class="muted"><strong>Implementation:</strong> JavaScript keyboard interaction with responsive UI feedback (⌘K / Ctrl+K).</p>
+            </article>
+            <article class="card">
+              <h3>Authentication modal</h3>
+              <p><strong>Purpose:</strong> Let students sign in or register without leaving the current placement context.</p>
+              <p class="muted"><strong>Implementation:</strong> Overlay with a sliding Sign In / Create Account control and form fields in one surface.</p>
+            </article>
+            <article class="card">
+              <h3>Radial profile score</h3>
+              <p><strong>Purpose:</strong> Make profile completeness readable at a glance.</p>
+              <p class="muted"><strong>Implementation:</strong> Animated SVG gauge tied to checklist items on the profile.</p>
+            </article>
+            <article class="card">
+              <h3>Application pipeline</h3>
+              <p><strong>Purpose:</strong> Show recruitment stage without opening every application.</p>
+              <p class="muted"><strong>Implementation:</strong> Multi-stage status UI from review through interview to offer.</p>
+            </article>
+            <article class="card">
+              <h3>Responsive drawer navigation</h3>
+              <p><strong>Purpose:</strong> Keep the five primary destinations available on small screens.</p>
+              <p class="muted"><strong>Implementation:</strong> Off-canvas navigation with the same destinations as the desktop sidebar.</p>
+            </article>
+            <article class="card">
+              <h3>Micro-interactions</h3>
+              <p><strong>Purpose:</strong> Confirm actions such as bookmarking, applying, and saving reminders.</p>
+              <p class="muted"><strong>Implementation:</strong> CSS transitions and toast/feedback states in vanilla JavaScript.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="cs-block" id="testing">
+          <p class="eyebrow">Usability Testing</p>
+          <h2>Tasks are defined. Results will be added after sessions.</h2>
+          <ol>
+            <li>Find an SDE opportunity.</li>
+            <li>Check its deadline.</li>
+            <li>Track an application.</li>
+            <li>Find an upcoming interview.</li>
+          </ol>
+          <div class="stat-grid" style="margin-top:1.5rem;">
+            <article class="card">
+              <p class="caption">Participants</p>
+              <p class="placeholder-note">[REAL NUMBER]</p>
+            </article>
+            <article class="card">
+              <p class="caption">Task completion</p>
+              <p class="placeholder-note">[REAL RESULT]</p>
+            </article>
+            <article class="card">
+              <p class="caption">Main friction</p>
+              <p class="placeholder-note">[REAL RESULT]</p>
+            </article>
+            <article class="card">
+              <p class="caption">Changes made</p>
+              <p class="placeholder-note">[REAL RESULT]</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="cs-block" id="iterations">
+          <p class="eyebrow">Iterations</p>
+          <h2>Before → feedback → change → after.</h2>
+          <div class="iteration-list">
+            <article class="card">
+              <p class="caption">Iteration 01</p>
+              <p><strong>Before</strong></p>
+              <p class="placeholder-note">[ADD BEFORE IMAGE / NOTE]</p>
+              <p><strong>User feedback</strong></p>
+              <p class="placeholder-note">[ADD ACTUAL USABILITY RESULT]</p>
+              <p><strong>Design change</strong></p>
+              <p class="placeholder-note">[ADD REAL DATA]</p>
+              <p><strong>After</strong></p>
+              <p class="placeholder-note">[ADD AFTER IMAGE / NOTE]</p>
+            </article>
+            <article class="card">
+              <p class="caption">Iteration 02</p>
+              <p><strong>Before</strong></p>
+              <p class="placeholder-note">[ADD BEFORE IMAGE / NOTE]</p>
+              <p><strong>User feedback</strong></p>
+              <p class="placeholder-note">[ADD ACTUAL USABILITY RESULT]</p>
+              <p><strong>Design change</strong></p>
+              <p class="placeholder-note">[ADD REAL DATA]</p>
+              <p><strong>After</strong></p>
+              <p class="placeholder-note">[ADD AFTER IMAGE / NOTE]</p>
+            </article>
+            <article class="card">
+              <p class="caption">Iteration 03</p>
+              <p><strong>Before</strong></p>
+              <p class="placeholder-note">[ADD BEFORE IMAGE / NOTE]</p>
+              <p><strong>User feedback</strong></p>
+              <p class="placeholder-note">[ADD ACTUAL USABILITY RESULT]</p>
+              <p><strong>Design change</strong></p>
+              <p class="placeholder-note">[ADD REAL DATA]</p>
+              <p><strong>After</strong></p>
+              <p class="placeholder-note">[ADD AFTER IMAGE / NOTE]</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="cs-block" id="implementation">
+          <p class="eyebrow">Final Implementation</p>
+          <h2>From Figma to GitHub Pages.</h2>
+          <div class="impl-flow">
+            <span>Figma</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>GitHub Pages</span>
+          </div>
+          <p>Orbit was implemented as a responsive static web experience using semantic HTML, CSS, and vanilla JavaScript.</p>
+          <p class="muted">Layouts were checked across desktop, tablet, and mobile so the same IA remains usable when the sidebar becomes a drawer.</p>
+        </section>
+
+        <section class="cs-block cs-end" id="live">
+          <p class="eyebrow">Live Product</p>
+          <h2>Use the suite, don’t just look at screenshots.</h2>
+          <div class="btn-row">
+            <a class="btn" href="https://adityakasara.github.io/Orbit-Placement-Suite/" rel="noopener noreferrer">View Live Product <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn--ghost" href="./foodshare.html">Next: FoodShare</a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div>
+        <strong>Kasara Aditya</strong>
+        <p>Product Design · UX/UI · Front-End</p>
+        <p>© 2026 Kasara Aditya</p>
+      </div>
+      <div>
+        <a href="https://www.linkedin.com/in/adityakasara45" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/Adityakasara" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:adityakasara.45@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js" defer></script>
+</body>
+</html>

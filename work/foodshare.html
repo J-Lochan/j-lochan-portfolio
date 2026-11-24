@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FoodShare — Case Study · Kasara Aditya</title>
+  <meta name="description" content="Case study for FoodShare, a full-stack food distribution platform designed and built by Kasara Aditya.">
+  <link rel="canonical" href="https://adityakasara.github.io/kasara-aditya-portfolio/work/foodshare.html">
+  <meta property="og:title" content="FoodShare — Case Study · Kasara Aditya">
+  <meta property="og:description" content="A full-stack platform connecting donors and volunteers through listing, pickup, and delivery workflows.">
+  <meta property="og:image" content="../assets/foodshare/hero.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/case-study.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+  <div class="cs-progress" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="wordmark" href="../index.html">Kasara Aditya</a>
+      <nav class="nav-desktop" aria-label="Primary">
+        <a href="../index.html#work" aria-current="page">Work</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact">Contact</a>
+        <a class="btn-resume" href="../resume/Kasara_Aditya_Resume.pdf">Resume</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-drawer" id="mobile-menu" hidden>
+    <div class="nav-drawer__top">
+      <a class="wordmark" href="../index.html">Kasara Aditya</a>
+      <button class="nav-drawer__close btn btn--ghost" type="button">Close</button>
+    </div>
+    <nav aria-label="Mobile">
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#contact">Contact</a>
+      <a href="../resume/Kasara_Aditya_Resume.pdf">Resume</a>
+    </nav>
+  </div>
+
+  <main id="main">
+    <section class="cs-hero container" id="hero">
+      <a class="back-link" href="../index.html#work">← Work</a>
+      <div class="cs-hero__grid">
+        <div>
+          <p class="cs-kicker">Project 02</p>
+          <h1 class="display" style="font-size: clamp(2.6rem, 7vw, 5rem);">FoodShare</h1>
+          <p>Full-Stack Food Distribution Platform</p>
+          <p class="lede">FoodShare is a full-stack food distribution platform connecting donors and volunteers through structured food listing, pickup, and delivery workflows.</p>
+          <div class="btn-row">
+            <a class="btn" href="https://adityakasara.github.io/FoodShare/" rel="noopener noreferrer">View Live Project <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn--ghost" href="https://github.com/Adityakasara/FoodShare" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+        <figure class="cs-hero__media media-reveal">
+          <img src="../assets/foodshare/hero.png" alt="FoodShare sign-in screen with donor and volunteer demo entry points" width="1440" height="900">
+        </figure>
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="cs-block" id="problem">
+        <p class="eyebrow">Problem</p>
+        <h2>Surplus food and people who can move it rarely share one workflow.</h2>
+        <p>Donors need a way to list food with urgency. Volunteers need a way to claim, pick up, and deliver. Without a shared status model, coordination falls back to chats and spreadsheets.</p>
+      </section>
+
+      <section class="cs-block" id="users">
+        <p class="eyebrow">Users</p>
+        <div class="problem-grid">
+          <article class="card">
+            <h3>Donors</h3>
+            <p class="muted">Restaurants, caterers, and individuals posting surplus food with time sensitivity.</p>
+          </article>
+          <article class="card">
+            <h3>Volunteers</h3>
+            <p class="muted">People claiming listings and coordinating pickup and delivery.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="cs-block" id="workflow">
+        <p class="eyebrow">Workflow</p>
+        <h2>Listing → claim → delivery.</h2>
+        <p class="flow"><span>Surplus posted</span> → Volunteer claimed → Out for delivery → Delivered</p>
+        <p class="muted" style="margin-top:1rem;">Urgency is grouped by expiration window (critical, high, medium, low) so volunteers can prioritize what moves first.</p>
+      </section>
+
+      <section class="cs-block" id="ui">
+        <p class="eyebrow">UI</p>
+        <h2>Role-based entry, then a working dashboard.</h2>
+        <p>The live product opens on authentication, with demo paths for donor and volunteer so the two dashboards can be reviewed without a full account setup.</p>
+        <figure style="margin-top:1.5rem;">
+          <div class="ui-frame">
+            <img src="../assets/foodshare/hero.png" alt="FoodShare authentication and demo role selection" width="1440" height="900" loading="lazy">
+          </div>
+          <figcaption class="ui-caption">Auth is the product’s front door: two roles, one workflow language.</figcaption>
+        </figure>
+        <p class="placeholder-note" style="margin-top:1rem;">[ADD DASHBOARD SCREENSHOT]</p>
+        <p class="placeholder-note">[ADD MAP / LISTING SCREENSHOT]</p>
+      </section>
+
+      <section class="cs-block" id="responsive">
+        <p class="eyebrow">Responsive Design</p>
+        <p>The interface is built as a mobile-first web app. Primary actions stay full-width on small screens; maps and listings stack instead of competing for a desktop grid.</p>
+      </section>
+
+      <section class="cs-block" id="implementation">
+        <p class="eyebrow">Implementation</p>
+        <h2>Front-end, maps, and a small API.</h2>
+        <ul>
+          <li>Responsive interface</li>
+          <li>Role-based dashboards</li>
+          <li>Location-based coordination</li>
+          <li>JavaScript</li>
+          <li>Leaflet.js</li>
+          <li>REST APIs</li>
+          <li>Node.js</li>
+          <li>SQLite</li>
+        </ul>
+        <p class="muted">A static GitHub Pages build is available for review. The Node/SQLite API is used for local full-stack runs.</p>
+      </section>
+
+      <section class="cs-block cs-end" id="live">
+        <p class="eyebrow">Live Project</p>
+        <div class="btn-row">
+          <a class="btn" href="https://adityakasara.github.io/FoodShare/" rel="noopener noreferrer">View Live Project <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn--ghost" href="./orbit.html">Orbit case study</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div>
+        <strong>Kasara Aditya</strong>
+        <p>Product Design · UX/UI · Front-End</p>
+        <p>© 2026 Kasara Aditya</p>
+      </div>
+      <div>
+        <a href="https://www.linkedin.com/in/adityakasara45" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/Adityakasara" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:adityakasara.45@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js" defer></script>
+</body>
+</html>
